@@ -1,0 +1,1 @@
+informazioni che deve avere ogni git decente
