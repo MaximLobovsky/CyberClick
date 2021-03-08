@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styloso.css">
+        <title>Lobovsky Clicker</title>
+        <script>
+
+            let points = 350;
+            let altezza = 160;
+            let primo_click = 0;
+
+            let cliccato = () =>
+            {
+                play()
+                points = points + 1;
+                altezza = altezza + 1;
+                document.getElementById("PointCount").innerHTML = altezza;
+                document.getElementById("adry").setAttribute("height", points)
+            }
+            let start = () =>
+            {
+                document.getElementById("PointCount").innerHTML = altezza;
+            }
+            window.onload = start
+
+            let play = () =>
+            {
+                if (primo_click==0)
+                {
+                    var audio = document.getElementById("audio");
+                    audio.play();
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="tutto">
+            <div>
+                <h1>CyberClick</h1>
+                <div>Keanu is <span id="PointCount"></span> mm tall</div>
+            </div>
+            <img id="adry" height="350" width="300" src="keanu.png" onclick="cliccato()"/>
+            <audio id="audio" src="Cyberpunk_Drop.mp3"></audio>
+        </div>
+    </body>
+</html>

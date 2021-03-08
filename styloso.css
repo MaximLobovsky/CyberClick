@@ -1,0 +1,21 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    text-align: center;
+}
+
+.tutto
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#adry
+{
+    justify-self: flex-end;
+}
